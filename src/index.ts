@@ -15,7 +15,3 @@ form.addEventListener('submit', (e) => {
     <p class="text-gray-800">${message}</p>
     `;
 });
-
-// document.getElementById('display').innerHTML = `
-// <p class="text-gray-800">${lib.hello('Alex')}</p>
-// `;
