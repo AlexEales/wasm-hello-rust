@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "hello-rust-wasm",
+    "public": "dist",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
