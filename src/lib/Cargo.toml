@@ -1,0 +1,13 @@
+[package]
+name = "lib"
+version = "0.1.0"
+authors = ["alex.eales <alex.eales@potatolondon.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+stdweb = "0.4.20"
+
+[lib]
+crate-type = ["cdylib"]

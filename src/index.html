@@ -11,27 +11,30 @@
 </head>
 <body>
     <main class="bg-gray-100 h-screen flex flex-col justify-center items-center">
-        <div class="col max-w-sm bg-white shadow-md rounded px-8 pt-6 pb-4 mb-4">
-            <h1 class="title font-bold text-6xl text-center">Hello Rust WASM</h1>
+        <section class="col max-w-sm bg-white shadow-md rounded-lg px-8 pt-6 pb-4 mb-4">
+            <h1 class="title font-bold text-6xl text-center text-gray-800">Hello Rust WASM</h1>
     
-            <form class="">
-                <div class="mb-4">
-                    <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                        Name
-                    </label>
-                    <input
-                            class="shadow appearance-none border rounded w-full py-2 px-3 mb-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                            id="nameInput"
-                            type="text"
-                            placeholder="Name">
-                    <button
-                            class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
-                            type="submit">
-                        Say Hello
-                    </button>
-                </div>
+            <form id="nameForm" class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="nameInput">
+                    Name
+                </label>
+                <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 mb-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="nameInput"
+                        type="text"
+                        placeholder="Name"
+                        name="name">
+                <button
+                        class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+                        type="submit">
+                    Say Hello
+                </button>
             </form>
-        </div>
+        </section>
+
+        <section id="messageDisplay" class="col max-w-sm bg-white shadow-md rounded-lg px-8 pt-6 pb-4 mb-4">
+            <p class="text-gray-500">Nothing said yet...</p>
+        </section>
     </main>
 
     <script src="./index.ts"></script>
